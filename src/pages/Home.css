@@ -1,0 +1,33 @@
+.home {
+  --font-size-name: 4rem;
+  --font-size-job: 1.75rem;
+  --font-size-bio-header: 1.75rem;
+  --font-size-bio: 1rem;
+}
+
+.name-and-job {
+  margin: 8.25rem auto 0;
+  text-align: center;
+}
+.name-and-job h1 {
+  margin-bottom: 0.75rem;
+  font-size: var(--font-size-name);
+}
+.name-and-job h2 {
+  font-size: var(--font-size-job);
+  color: var(--color-contrast-3);
+}
+
+.bio {
+  margin: 13.75rem 2.75rem 0;
+  letter-spacing: 0.0625rem;
+}
+.bio h4 {
+  margin-bottom: 0.25rem;
+  font-size: var(--font-size-bio-header);
+  color: var(--color-contrast-2);
+}
+.bio p {
+  font-size: var(--font-size-bio);
+  color: var(--color-contrast-3);
+}
