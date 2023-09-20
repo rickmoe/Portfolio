@@ -1,0 +1,41 @@
+.contact {
+  --font-size-title: 4rem;
+  --font-size-links: 1rem;
+
+  text-align: center;
+}
+
+.contact h1 {
+  margin: 10rem auto 0;
+  font-size: var(--font-size-title);
+}
+
+.links {
+  margin-top: 10rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 1.75rem;
+
+  font-size: var(--font-size-links);
+}
+
+.links a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.links img {
+  height: 50px;
+  width: 50px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .links a {
+    transition: scale 0.25s ease-out;
+  }
+
+  .links a:hover {
+    scale: 1.6;
+  }
+}

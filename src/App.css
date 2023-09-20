@@ -35,10 +35,6 @@ h4 {
   filter: blur(0.45rem);
   opacity: 0.4;
 }
-.invisible {
-  filter: blur(3rem);
-  opacity: 0;
-}
 
 .background-img {
   height: 100%;
