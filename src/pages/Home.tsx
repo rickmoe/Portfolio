@@ -14,7 +14,7 @@ const Home = () => {
       <section className="bio">
         <h4>What You're Getting:</h4>
         <p>
-          7 years of programming experience in various languages and settings, a
+          7 years of programming in various languages and environments, a
           perfect GPA while pursuing 4 majors, strong interpersonal skills, and
           experience working on (and leading) a software development team.
         </p>

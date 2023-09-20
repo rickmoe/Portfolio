@@ -1,11 +1,34 @@
+import { Link } from "react-router-dom";
 import MenuIcon from "./MenuIcon";
 import "./Navbar.css";
 
-const Navbar = () => {
+interface NavbarProps {
+  menuOpen: boolean;
+  toggleMenuOpen: VoidFunction;
+}
+
+const Navbar = ({ menuOpen, toggleMenuOpen }: NavbarProps) => {
   return (
-    <nav>
-      <MenuIcon onClick={() => {}} />
-    </nav>
+    <>
+      <nav>
+        <MenuIcon open={menuOpen} onClick={toggleMenuOpen} />
+        <Link className={menuOpen ? "" : "invisible"} to="/">
+          Home
+        </Link>
+        <Link className={menuOpen ? "" : "invisible"} to="/about">
+          About
+        </Link>
+        <Link className={menuOpen ? "" : "invisible"} to="/skills">
+          Skills
+        </Link>
+        <Link className={menuOpen ? "" : "invisible"} to="/projects">
+          Projects
+        </Link>
+        <Link className={menuOpen ? "" : "invisible"} to="/contact">
+          Contact Me
+        </Link>
+      </nav>
+    </>
   );
 };
 

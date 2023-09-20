@@ -1,23 +1,14 @@
 // Adapted From https://css-tricks.com/line-animated-hamburger-menu/
-import { useState } from "react";
 import "./MenuIcon.css";
 
 interface MenuIconProps {
+  open: boolean;
   onClick: VoidFunction;
 }
 
-const MenuIcon = ({ onClick }: MenuIconProps) => {
-  const [open, setOpen] = useState(false);
-  const toggleOpen = () => setOpen((prev) => !prev);
-
+const MenuIcon = ({ open, onClick }: MenuIconProps) => {
   return (
-    <button
-      className={open ? "dropdown open" : "dropdown"}
-      onClick={() => {
-        toggleOpen();
-        onClick();
-      }}
-    >
+    <button className={open ? "dropdown open" : "dropdown"} onClick={onClick}>
       <svg width="100" height="100" viewBox="0 0 100 100">
         <path
           className="line line1"
