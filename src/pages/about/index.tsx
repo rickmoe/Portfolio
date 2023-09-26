@@ -1,5 +1,4 @@
 import ImageCarousel from "../../components/ImageCarousel";
-// import CourseTable from "../../components/CourseTable";
 import "./index.css";
 
 const ROBOTICS_IMAGES = [
@@ -32,10 +31,6 @@ const About = () => {
         </p>
         <ImageCarousel imagePaths={ROBOTICS_IMAGES} />
       </section>
-      {/* <section className="coursework">
-        <h4>Coursework:</h4>
-        <CourseTable />
-      </section> */}
     </section>
   );
 };

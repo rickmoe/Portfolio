@@ -1,3 +1,4 @@
+import { useSearchParams } from "react-router-dom";
 import "./index.css";
 
 const projects = [
@@ -18,13 +19,13 @@ const projects = [
     ],
     github: "https://github.com/rickmoe/QuickURL",
     link: "https://quick-url.netlify.app/",
-    featured: true,
   },
   {
     name: "Wordle+",
     description:
       "A Wordle-lover's delight. This extends the classic Wordle game to allow for the entire English language and words of different lengths. An endless mode allows users to play back-to-back games with target words being selected based on their frequency of use in the English language.",
     tools: [
+      "JavaScript",
       "TypeScript",
       "HTML",
       "CSS",
@@ -37,7 +38,6 @@ const projects = [
       "Git",
     ],
     github: "https://github.com/rickmoe/WordlePlus",
-    featured: true,
   },
   {
     name: "Smart Assistant",
@@ -61,15 +61,29 @@ const projects = [
 ];
 
 const Projects = () => {
+  const [searchParams, _] = useSearchParams();
+  const toolFilter = searchParams.get("tool-filter");
+  const filteredProjects = toolFilter
+    ? projects.filter((project) => project.tools.includes(toolFilter))
+    : projects;
+
+  if (filteredProjects.length < 1) {
+    return (
+      <section className="projects">
+        <h1>Projects</h1>
+        <h2>
+          No public projects yet. Check back later and contact me if you'd like
+          to see a project using {toolFilter}.
+        </h2>
+      </section>
+    );
+  }
   return (
     <section className="projects">
       <h1>Projects</h1>
       <section className="card-box">
-        {projects.map((project) => (
-          <article
-            key={project.name}
-            className={project.featured ? "card featured" : "card"}
-          >
+        {filteredProjects.map((project) => (
+          <article key={project.name} className="card">
             <img src={`/${project.name}.webp`} />
             <section className="card-bottom">
               <h4>{project.name}</h4>

@@ -1,9 +1,9 @@
 .skills {
-  --font-size-title: 4rem;
-  --font-size-subtitle: 1.25rem;
-  --font-size: 1.25rem;
+  --font-size-title: clamp(4rem, calc(2.54vw + 2.95rem), 6rem);
+  --font-size-subtitle: clamp(1.25rem, calc(1.59vw + 0.595rem), 2.5rem);
+  --font-size: clamp(1.25rem, calc(0.634vw + 0.988rem), 1.75rem);
 
-  width: 90%;
+  width: min(90%, 45rem);
   margin: 2rem auto;
 
   display: flex;
@@ -49,6 +49,10 @@
 .skills ul li:hover {
   border-color: var(--color-blue-highlight);
   color: var(--color-blue-highlight);
+}
+.skills ul li a {
+  text-decoration: none;
+  color: inherit;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
