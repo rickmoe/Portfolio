@@ -1,3 +1,4 @@
+import "./App.css";
 import {
   Outlet,
   Route,
@@ -5,12 +6,13 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
-import "./App.css";
+import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Home from "./pages";
-import { useState } from "react";
 import About from "./pages/about";
 import Contact from "./pages/contact";
+import Skills from "./pages/skills";
+import Projects from "./pages/projects";
 
 const App = () => {
   let router = createBrowserRouter(
@@ -19,8 +21,8 @@ const App = () => {
         <Route path="/" element={<Root />}>
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/skills" element={<About />} />
-          <Route path="/projects" element={<About />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Route>
       </>

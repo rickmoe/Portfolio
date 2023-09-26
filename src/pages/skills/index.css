@@ -1,0 +1,62 @@
+.skills {
+  --font-size-title: 4rem;
+  --font-size-subtitle: 1.25rem;
+  --font-size: 1.25rem;
+
+  width: 90%;
+  margin: 2rem auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  font-size: var(--font-size);
+}
+
+.skills h1 {
+  margin-top: 2rem;
+  text-align: center;
+
+  font-size: var(--font-size-title);
+}
+
+.skills h4 {
+  margin-bottom: 0.5rem;
+
+  font-size: var(--font-size-subtitle);
+  color: var(--color-contrast-2);
+}
+
+.skills ul {
+  margin-inline: 0.5rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  list-style: none;
+}
+
+.skills ul li {
+  border: 1px solid var(--color-contrast-3);
+  border-radius: 0.75rem;
+  padding: 0.5rem;
+
+  white-space: nowrap;
+
+  color: var(--color-contrast-3);
+}
+.skills ul li:hover {
+  border-color: var(--color-blue-highlight);
+  color: var(--color-blue-highlight);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .skills ul li {
+    transition: color 0.5s, border-color 0.5s, scale 0.5s, background-color 0.2s;
+  }
+  .skills ul li:hover {
+    scale: 1.2;
+    background-color: var(--color-neutral-1);
+  }
+}

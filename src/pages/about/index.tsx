@@ -1,5 +1,12 @@
+import ImageCarousel from "../../components/ImageCarousel";
 // import CourseTable from "../../components/CourseTable";
 import "./index.css";
+
+const ROBOTICS_IMAGES = [
+  "/robotics-comp.webp",
+  "/robotics-robot.webp",
+  "/robotics-climb.webp",
+];
 
 const About = () => {
   return (
@@ -23,7 +30,7 @@ const About = () => {
           Former Software Leader of FRC Team 4296, who qualified for the
           world-championships
         </p>
-        <img src="/robotics-comp.webp" />
+        <ImageCarousel imagePaths={ROBOTICS_IMAGES} />
       </section>
       {/* <section className="coursework">
         <h4>Coursework:</h4>

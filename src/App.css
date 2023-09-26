@@ -6,7 +6,8 @@
   --color-contrast-2: #e8e8e8;
   --color-contrast-3: #a8a8a8;
   /* Base + CTA Colors */
-  --color-blue: #4285f4;
+  --color-blue: hsl(217, 89%, 61%);
+  --color-blue-highlight: hsl(217, 89%, 70%);
 
   /* Formatting and Other Global Variables */
   --nav-height: 5rem;

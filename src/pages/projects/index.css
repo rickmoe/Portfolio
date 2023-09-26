@@ -1,0 +1,105 @@
+.projects {
+  --font-size-title: 4rem;
+  --font-size-subtitle: 1.75rem;
+  --font-size-description: 0.75rem;
+  --font-size-tools: 0.875rem;
+
+  --card-border-radius: 1rem;
+
+  width: 90%;
+  margin: 2rem auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.projects h1 {
+  margin-block: 2rem 1rem;
+  text-align: center;
+
+  font-size: var(--font-size-title);
+}
+
+.card-box {
+  max-width: 100%;
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  max-width: 100%;
+  border: 1px solid var(--color-contrast-3);
+  border-radius: var(--card-border-radius);
+}
+
+.card-bottom {
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--card-border-radius) var(--card-border-radius) 0 0;
+}
+
+.card h4 {
+  margin: 0 0.5rem;
+  font-size: var(--font-size-subtitle);
+}
+
+.card .description {
+  margin: 0 1rem;
+  font-size: var(--font-size-description);
+  color: var(--color-contrast-3);
+}
+
+.tools {
+  margin: 0.25rem 0.5rem 0.5rem;
+
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+
+  font-size: var(--font-size-tools);
+}
+
+.tools span {
+  padding: 0.25rem;
+  border: 1px solid var(--color-contrast-3);
+  border-radius: 0.75rem;
+  color: var(--color-contrast-3);
+}
+.tools span:hover {
+  color: var(--color-blue-highlight);
+  border-color: var(--color-blue-highlight);
+}
+
+.link {
+  position: absolute;
+  right: 0.125rem;
+  top: 0.125rem;
+}
+.link img {
+  width: 30px;
+  height: 30px;
+}
+.link + .link {
+  translate: -100% 0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .link {
+    transition: scale 0.25s ease-out;
+  }
+  .link:hover {
+    scale: 1.2;
+  }
+
+  .tools span {
+    transition: color 0.5s, border-color 0.5s, scale 0.5s;
+  }
+  .tools span:hover {
+    scale: 1.1;
+  }
+}
