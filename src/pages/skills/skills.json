@@ -1,0 +1,27 @@
+[
+  {
+    "label": "Programming & Markup Languages",
+    "list": [
+      "Python",
+      "JavaScript",
+      "TypeScript",
+      "Java",
+      "C#",
+      "SQL",
+      "HTML",
+      "CSS"
+    ]
+  },
+  {
+    "label": "Databases",
+    "list": ["MySQL", "MongoDB", "Firebase"]
+  },
+  {
+    "label": "Web Frameworks & Libraries",
+    "list": ["React", "Node.js", "Express", "Flask"]
+  },
+  {
+    "label": "Other Tools & Technology",
+    "list": ["Linux", "Git", "Make", "Docker", "MS Office & G Suite"]
+  }
+]

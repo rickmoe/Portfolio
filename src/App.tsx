@@ -8,22 +8,16 @@ import {
 } from "react-router-dom";
 import { useState } from "react";
 import Navbar from "./components/Navbar";
-import Home from "./pages";
-import About from "./pages/about";
-import Contact from "./pages/contact";
-import Skills from "./pages/skills";
-import Projects from "./pages/projects";
+import pages from "./pages";
 
 const App = () => {
   let router = createBrowserRouter(
     createRoutesFromElements(
       <>
         <Route path="/" element={<Root />}>
-          <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
+          {pages.map(({ route, element }) => (
+            <Route path={route} element={element} key={route} />
+          ))}
         </Route>
       </>
     )

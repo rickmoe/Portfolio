@@ -1,0 +1,75 @@
+.course-dropdown button {
+  width: 100%;
+  margin: 0.375rem 0;
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 0.75rem;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  font-size: 0.9em;
+  color: inherit;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.course-dropdown .arrow {
+  display: inline-block;
+  border-style: solid;
+  width: 0;
+  height: 0;
+}
+.course-dropdown .arrow.up {
+  border-width: 0 6px 6px 6px;
+  border-color: transparent transparent var(--color-contrast-2) transparent;
+}
+.course-dropdown .arrow.down {
+  border-width: 6px 6px 0 6px;
+  border-color: var(--color-contrast-2) transparent transparent transparent;
+}
+
+.course-dropdown ul {
+  list-style: none;
+  color: var(--color-contrast-3);
+}
+.course-dropdown li {
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.75rem;
+  margin-inline: 0.75rem;
+}
+.course-dropdown h6 {
+  font-size: inherit;
+
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 0.75rem;
+}
+.course-dropdown li:nth-child(2n + 1) {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.course-dropdown li:nth-child(2n) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.course-dropdown li .code {
+  margin-block: 0.125rem;
+  font-size: 0.75em;
+}
+.course-dropdown li .description {
+  font-size: 0.6em;
+}
+
+.course-dropdown .hidden {
+  opacity: 0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .course-dropdown ul {
+    transition: opacity 0.7s;
+  }
+
+  .course-dropdown .arrow {
+    transition: border 0.5s;
+  }
+}

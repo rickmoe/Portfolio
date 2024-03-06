@@ -15,11 +15,11 @@ const Contact = () => {
           <img src="/icons8-linkedin.webp" />
           <p>LinkedIn</p>
         </a>
-        <a href="https://github.com/rickmoe" target="_blank">
-          {/* Image credit to https://icons8.com/icon/12598/github */}
+        {/* <a href="https://github.com/rickmoe" target="_blank">
+          {/* Image credit to https://icons8.com/icon/12598/github *}
           <img src="/icons8-github.webp" />
           <p>GitHub</p>
-        </a>
+        </a> */}
       </section>
     </section>
   );
