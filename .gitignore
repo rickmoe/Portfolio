@@ -24,5 +24,4 @@ dist-ssr
 *.sw?
 
 legacy
-pnpm-lock.yaml
 .gitignore
