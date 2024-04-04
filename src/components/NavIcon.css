@@ -1,0 +1,36 @@
+nav .dropdown {
+  padding: 0;
+  border: 0;
+
+  background-color: transparent;
+  cursor: pointer;
+  scale: 0.6;
+}
+nav .line {
+  fill: none;
+  stroke: var(--color-blue);
+  stroke-width: 3;
+}
+nav .line1,
+nav .line3 {
+  stroke-dasharray: 60 207;
+}
+nav .line2 {
+  stroke-dasharray: 60 60;
+}
+nav .open .line1,
+nav .open .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+}
+nav .open .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  nav .line {
+    transition: stroke-dasharray 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.05s,
+      stroke-dashoffset 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.05s;
+  }
+}

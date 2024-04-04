@@ -1,0 +1,44 @@
+.education {
+  --font-size-title: clamp(4rem, calc(1.9vw + 3.21rem), 5.5rem);
+  --font-size-subtitle: clamp(2rem, (1.27vw + 1.48rem), 3rem);
+  --font-size-education: clamp(1.25rem, (0.318vw + 1.11rem), 1.5rem);
+
+  width: min(85%, 50rem);
+  margin: 0 auto 2rem auto;
+  font-size: var(--font-size-education);
+}
+
+.education h1 {
+  font-size: var(--font-size-title);
+  margin: var(--nav-height) auto 1rem auto;
+  text-align: center;
+}
+
+.education .uw > :not(h4) {
+  margin-left: 1rem;
+}
+
+.education .uw > h4 {
+  font-size: var(--font-size-subtitle);
+  color: var(--color-contrast-2);
+}
+
+.education .uw > ul {
+  padding-left: 1.5rem;
+}
+
+.education .uw > p,
+.education .uw > ul li {
+  margin-block: 0.25rem;
+  color: var(--color-contrast-3);
+}
+
+.education .courses {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.education .courses h5 {
+  font-size: 1em;
+}

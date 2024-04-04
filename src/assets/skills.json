@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Programming Languages",
+    "list": ["JavaScript", "TypeScript", "Python", "Java", "C#", "C", "Rust"]
+  },
+  {
+    "label": "Other Technical Languages",
+    "list": ["SQL", "HTML", "CSS"]
+  },
+  {
+    "label": "Web Development Tools",
+    "list": ["React.js", "Solid.js", "Node.js", "Express", "Flask"]
+  },
+  {
+    "label": "Databases",
+    "list": ["MySQL", "MongoDB", "Firebase"]
+  },
+  {
+    "label": "Other Tools",
+    "list": ["Git", "Make", "Linux", "Docker", "Microsoft Office"]
+  }
+]

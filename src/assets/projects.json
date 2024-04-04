@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Wordle+",
+    "description": "A Wordle-lover's delight! Extends the classic Wordle game to utilize the entire English language, including words of different lengths. An endless mode enables users to play back-to-back games with target words selected based on their frequency of use in the English language.",
+    "tools": [
+      "TypeScript",
+      "Python",
+      "React.js",
+      "Node.js",
+      "Flask",
+      "MySQL",
+      "SQL",
+      "HTML",
+      "CSS"
+    ],
+    "github": "https://github.com/rickmoe/WordlePlus"
+  },
+  {
+    "name": "QuickURL",
+    "description": "A browser-based URL shortener that allows for up to 68.7 billion shortened URLs with only six characters added to each link!",
+    "tools": [
+      "JavaScript",
+      "React.js",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "HTML",
+      "CSS"
+    ],
+    "github": "https://github.com/rickmoe/QuickURL",
+    "link": "https://quick-url.netlify.app/"
+  },
+  {
+    "name": "Spectral Cut Optimization",
+    "description": "A university-level course gave us starting code for a spectral cut algorithm, but when it took between three and eight minutes to run the algorithm on the given dataset, I figured I could improve it. My improved algorithm reduced the runtime by 99.2% on the test dataset and it performs even better for larger input sizes!",
+    "tools": ["Python"],
+    "link": "/OptimizedSpectralCut.html",
+    "pdf": "/OptimizedSpectralCut.pdf"
+  },
+  {
+    "name": "ID Scanning App",
+    "description": "This mobile app allows librarians to look up students' schedules from a Firebase database and determine if the student is skipping class with a single scan of their student ID.",
+    "tools": ["Java", "Firebase"]
+  },
+  {
+    "name": "Smart Assistant",
+    "description": "A modular Smart Assistant framework designed to make smart home technology more accessible for the average consumer and more customizable for the technical mind.",
+    "tools": ["Python"],
+    "github": "https://github.com/rickmoe/SmartAssistant"
+  },
+  {
+    "name": "Autonomous Drone",
+    "description": "A fully autonomous drone built from scratch using an Arduino, simple electronics, and polycarbonate that can fly any pre-programmed path.",
+    "tools": ["Arduino"]
+  }
+]

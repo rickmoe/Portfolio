@@ -1,0 +1,125 @@
+.projects {
+  --font-size-title: clamp(4rem, calc(2.54vw + 2.95rem), 6rem);
+  --font-size-subtitle: clamp(2.25rem, calc(0.635vw + 1.99rem), 2.75rem);
+  --font-size-description: clamp(1rem, calc(0.635vw + 0.738rem), 1.5rem);
+  --font-size-tools: clamp(1.25rem, calc(0.635vw + 0.988rem), 1.75rem);
+
+  --card-border-radius: 1rem;
+
+  width: 90% !important; /* Allow it to be wider than default */
+  margin-block: 2rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.projects h1 {
+  font-size: var(--font-size-title);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.projects h2 {
+  text-align: center;
+  font-size: var(--font-size-subtitle);
+  color: var(--color-contrast-3);
+  max-width: 50%;
+  margin-inline: auto;
+}
+
+.projects .card-box {
+  display: grid;
+  gap: 1rem;
+}
+
+.projects .card {
+  border: 1px solid var(--color-contrast-3);
+  border-radius: var(--card-border-radius);
+}
+
+.projects .card-bottom {
+  position: relative;
+}
+
+.projects .card > img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--card-border-radius) var(--card-border-radius) 0 0;
+}
+
+.projects .card h4 {
+  margin: 0 0.5rem;
+  font-size: var(--font-size-subtitle);
+}
+
+.projects .card .description {
+  margin: 0 1rem;
+  font-size: var(--font-size-description);
+  color: var(--color-contrast-3);
+}
+
+.projects .tools {
+  margin: 0.25rem 0.5rem 0.5rem;
+
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+
+  font-size: var(--font-size-tools);
+}
+
+.projects .tools span {
+  padding: 0.25rem;
+  border: 1px solid var(--color-contrast-3);
+  border-radius: 0.75rem;
+  color: var(--color-contrast-3);
+  cursor: default;
+}
+.projects .tools span:hover {
+  color: var(--color-blue-highlight);
+  border-color: var(--color-blue-highlight);
+}
+
+.projects .link {
+  position: absolute;
+  right: 0.125rem;
+  top: 0.125rem;
+}
+.projects .link img {
+  width: 30px;
+  height: 30px;
+}
+.projects .link + .link {
+  translate: -100% 0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .projects .link {
+    transition: scale 0.15s ease-out;
+  }
+  .projects .link:hover {
+    scale: 1.2;
+  }
+
+  .projects .tools span {
+    transition: color 0.35s, border-color 0.35s, scale 0.35s,
+      background-color 0.15s;
+  }
+  .projects .tools span:hover {
+    scale: 1.1;
+    background-color: var(--color-neutral-1);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .projects .card-box {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .projects .card-box {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

@@ -9,9 +9,6 @@
   --color-blue: hsl(217, 89%, 61%);
   --color-blue-highlight: hsl(217, 89%, 70%);
 
-  /* Formatting and Other Global Variables */
-  --nav-height: 5rem;
-
   background-color: var(--color-neutral-1);
   color: var(--color-contrast-1);
   font-family: "Inter", sans-serif;
@@ -23,6 +20,33 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+#root {
+  margin-top: 5rem;
+}
+
+#root > .background {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  pointer-events: none;
+}
+
+#root > .main > section {
+  width: min(90%, 50rem);
+  margin-inline: auto;
+}
+
+#root::before .main {
+  filter: blur(1rem);
 }
 
 h1,
@@ -39,22 +63,9 @@ h6 {
   opacity: 0.4;
 }
 
-.background-img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-
-  opacity: 0.2;
-}
-
 @media screen and (prefers-reduced-motion: no-preference) {
-  main,
-  .background-img {
+  .main,
+  #root::before {
     transition: filter 0.4s ease-out, opacity 0.4s ease-out;
   }
 }
