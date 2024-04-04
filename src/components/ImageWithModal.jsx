@@ -7,7 +7,11 @@ const ImageWithModal = (props) => {
 
   return (
     <>
-      <img src={props.src} use:clickInside={() => setModalOpen(true)} />
+      <img
+        class="modal-on-click"
+        src={props.src}
+        use:clickInside={() => setModalOpen(true)}
+      />
       <Show when={modalOpen()}>
         <div class="modal">
           <img
