@@ -14,11 +14,11 @@
   text-align: center;
 }
 
-.education .uw > :not(h4) {
+.education .uw > :not(h2) {
   margin-left: 1rem;
 }
 
-.education .uw > h4 {
+.education .uw > h2 {
   font-size: var(--font-size-subtitle);
   color: var(--color-contrast-2);
 }
@@ -39,6 +39,6 @@
   gap: 0.5rem;
 }
 
-.education .courses h5 {
+.education .courses h3 {
   font-size: 1em;
 }

@@ -27,7 +27,7 @@ const CourseDropdown = (props) => {
           <For each={props.courses}>
             {(course, index) => (
               <li onClick={() => clickIndex(index())}>
-                <h6>
+                <h4>
                   {course.name}{" "}
                   <span
                     classList={{
@@ -36,7 +36,7 @@ const CourseDropdown = (props) => {
                       down: index() !== selectedIndex(),
                     }}
                   />
-                </h6>
+                </h4>
                 <Show when={index() === selectedIndex()}>
                   <p class="code">{course.code}</p>
                   <p class="description">{course.description}</p>

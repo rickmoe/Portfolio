@@ -8,7 +8,7 @@ const Robotics = () => {
   return (
     <section class="robotics">
       <h1>Robotics</h1>
-      <h4>FRC Team 4296: Trident Robotics</h4>
+      <h2>FRC Team 4296: Trident Robotics</h2>
       <p>Member for three years</p>
       <p>Software Team Leader for one year</p>
       <p>Leader of Computer Vision for one year</p>

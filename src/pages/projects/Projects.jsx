@@ -36,7 +36,7 @@ const Projects = () => {
                   />
                   <section class="card-bottom">
                     <section>
-                      <h4>{project.name}</h4>
+                      <h2>{project.name}</h2>
                       <p class="description">{project.description}</p>
                     </section>
                     <section class="tools">

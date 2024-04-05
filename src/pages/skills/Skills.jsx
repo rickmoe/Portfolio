@@ -9,7 +9,7 @@ const Skills = () => {
       <For each={skills}>
         {(skill) => (
           <section>
-            <h4>{skill.label}</h4>
+            <h2>{skill.label}</h2>
             <ul>
               <For each={skill.list}>
                 {(item) => (

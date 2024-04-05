@@ -10,7 +10,7 @@ const Education = () => {
     <section className="education">
       <h1>Education</h1>
       <section className="uw">
-        <h4>University of Wisconsin-Madison</h4>
+        <h2>University of Wisconsin-Madison</h2>
         <p>4.0 GPA</p>
         <p>Degrees:</p>
         <ul>
@@ -20,7 +20,7 @@ const Education = () => {
           <li>Psychology, B.S.</li>
         </ul>
         <section className="courses">
-          <h5>Courses:</h5>
+          <h3>Courses:</h3>
           <For each={courseTags}>
             {([tag, courses]) => (
               <CourseDropdown label={tag} courses={courses} />

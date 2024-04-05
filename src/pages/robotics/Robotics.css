@@ -14,7 +14,7 @@
   text-align: center;
 }
 
-.robotics h4 {
+.robotics h2 {
   font-size: var(--font-size-subtitle);
   color: var(--color-contrast-2);
 }
@@ -34,4 +34,5 @@
 }
 .robotics .img-box > img {
   width: min(340px, 80%);
+  aspect-ratio: 1;
 }

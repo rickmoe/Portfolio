@@ -1,5 +1,5 @@
 import emailIcon from "../../assets/email-icon.webp";
-import linkedinIcon from "../../assets/linkedin-icon.webp";
+import linkedinIcon from "../../assets/linkedin-icon.svg";
 import "./Contact.css";
 
 const Contact = () => {
