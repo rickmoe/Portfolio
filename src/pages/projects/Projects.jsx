@@ -32,7 +32,7 @@ const Projects = () => {
                 <article class="card">
                   <ImageWithModal
                     src={`/${project.name}.webp`}
-                    alt={`${project.name} picture`}
+                    alt={`${project.name}`}
                   />
                   <section class="card-bottom">
                     <section>
@@ -53,13 +53,13 @@ const Projects = () => {
                     <Show when={project.link}>
                       <a href={project.link} class="link" target="_blank">
                         {/* Image credit to https://icons8.com/icon/7867/link */}
-                        <img src={linkIcon} alt="project link" />
+                        <img src={linkIcon} alt="link" />
                       </a>
                     </Show>
                     <Show when={project.pdf}>
                       <a href={project.pdf} class="link" target="_blank">
                         {/* Image credit to https://icons8.com/icon/7867/link */}
-                        <img src={pdfIcon} alt="project pdf" />
+                        <img src={pdfIcon} alt="pdf" />
                       </a>
                     </Show>
                   </section>
