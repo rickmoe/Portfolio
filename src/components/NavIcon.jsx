@@ -5,8 +5,8 @@ const NavIcon = (props) => {
     <button
       classList={{ dropdown: true, open: props.open() }}
       onClick={props.onClick}
+      aria-label="navigation menu icon"
     >
-      {/* <button class="dropdown"> */}
       <svg width="120" height="120" viewBox="0 0 100 100">
         <path
           class="line line1"

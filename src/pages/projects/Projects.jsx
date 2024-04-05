@@ -30,7 +30,10 @@ const Projects = () => {
             <For each={projects()}>
               {(project) => (
                 <article class="card">
-                  <ImageWithModal src={`/${project.name}.webp`} />
+                  <ImageWithModal
+                    src={`/${project.name}.webp`}
+                    alt={`${project.name} picture`}
+                  />
                   <section class="card-bottom">
                     <section>
                       <h4>{project.name}</h4>
@@ -44,19 +47,19 @@ const Projects = () => {
                     {/* <Show when={project.github}>
                       <a href={project.github} class="link" target="_blank">
                         {/* Image credit to https://icons8.com/icon/12598/github *}
-                        <img src={githubIcon} />
+                        <img src={githubIcon} alt="github link" />
                       </a>
                     </Show> */}
                     <Show when={project.link}>
                       <a href={project.link} class="link" target="_blank">
                         {/* Image credit to https://icons8.com/icon/7867/link */}
-                        <img src={linkIcon} />
+                        <img src={linkIcon} alt="project link" />
                       </a>
                     </Show>
                     <Show when={project.pdf}>
                       <a href={project.pdf} class="link" target="_blank">
                         {/* Image credit to https://icons8.com/icon/7867/link */}
-                        <img src={pdfIcon} />
+                        <img src={pdfIcon} alt="project pdf" />
                       </a>
                     </Show>
                   </section>

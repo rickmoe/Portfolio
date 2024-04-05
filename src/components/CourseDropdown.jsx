@@ -1,11 +1,11 @@
 import { For, createSignal } from "solid-js";
-import useProlongBoolean from "../hooks/useProlong";
+// import useProlongBoolean from "../hooks/useProlong";
 import "./CourseDropdown.css";
 
 const CourseDropdown = (props) => {
   const [open, setOpen] = createSignal(false);
   const [selectedIndex, setSelectedIndex] = createSignal(-1);
-  const prolongedOpen = useProlongBoolean(open, 300);
+  // const prolongedOpen = useProlongBoolean(open, 0);  // TODO: Revisit when CSS is improved
 
   const toggleOpen = () => {
     setOpen(!open());
@@ -22,7 +22,7 @@ const CourseDropdown = (props) => {
         {props.label}{" "}
         <span classList={{ arrow: true, up: open(), down: !open() }} />
       </button>
-      <Show when={prolongedOpen()}>
+      <Show when={open()}>
         <ul classList={{ hidden: !open() }}>
           <For each={props.courses}>
             {(course, index) => (

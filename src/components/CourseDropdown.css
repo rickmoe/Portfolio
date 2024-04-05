@@ -64,18 +64,19 @@
   font-size: 0.6em;
 }
 
-.course-dropdown .hidden {
+/* TODO: Revisit and expand height out */
+/* .course-dropdown .hidden {
   display: none;
-}
+} */
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .course-dropdown ul {
-    transition: opacity 0.35s;
-  }
-  .course-dropdown ul.hidden {
+  /* .course-dropdown ul {
+    transition: opacity 0.3s;
+  } */
+  /* .course-dropdown ul.hidden {
     display: block;
     opacity: 0;
-  }
+  } */
 
   .course-dropdown .arrow {
     transition: border 0.25s linear 0.1s;

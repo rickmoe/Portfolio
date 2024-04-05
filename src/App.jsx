@@ -11,6 +11,7 @@ const App = (props) => {
       <img
         src={background}
         classList={{ background: true, faded: navOpen() }}
+        alt="background"
       />
       <div classList={{ main: true, faded: navOpen() }}>
         {props.children}

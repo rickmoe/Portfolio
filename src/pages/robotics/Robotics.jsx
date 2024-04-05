@@ -20,9 +20,9 @@ const Robotics = () => {
       </p>
       {/* TODO: Add modal for larger image display on click */}
       <section class="img-box">
-        <ImageWithModal src={robot} />
-        <ImageWithModal src={climb} />
-        <ImageWithModal src={comp} />
+        <ImageWithModal src={robot} alt="robot picture" />
+        <ImageWithModal src={climb} alt="robot climbing" />
+        <ImageWithModal src={comp} alt="robotics team at a competition" />
       </section>
     </section>
   );

@@ -3,26 +3,32 @@
   --font-size-subtitle: clamp(1.75rem, calc(1.27vw + 1.23rem), 2.75rem);
   --font-size-bio: clamp(1rem, calc(0.635vw + 0.738rem), 1.5rem);
 
-  margin-top: 8.25rem;
+  margin-top: 12vh;
 }
 
 .home .heading {
   text-align: center;
 }
+
 .home .heading h1 {
   margin-bottom: 0.75rem;
   font-size: var(--font-size-name);
 }
+
+.home b {
+  color: var(--color-blue);
+}
+
 .home .heading h2 {
   font-size: var(--font-size-subtitle);
   color: var(--color-contrast-3);
 }
 
 .home .bio {
-  margin-top: 13.75rem;
+  margin-top: 40%;
   letter-spacing: 0.0625rem;
 }
-.home .bio h4 {
+.home .bio h3 {
   margin-bottom: 0.25rem;
   font-size: var(--font-size-subtitle);
   color: var(--color-contrast-2);
@@ -30,4 +36,9 @@
 .home .bio p {
   font-size: var(--font-size-bio);
   color: var(--color-contrast-3);
+}
+
+.home a {
+  text-decoration: none;
+  color: var(--color-blue-highlight);
 }

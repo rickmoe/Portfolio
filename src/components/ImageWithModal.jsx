@@ -9,17 +9,17 @@ const ImageWithModal = (props) => {
     <>
       <img
         class="modal-on-click"
-        src={props.src}
         use:clickInside={() => setModalOpen(true)}
+        {...props}
       />
       <Show when={modalOpen()}>
         <div class="modal">
           <img
-            src={props.src}
             use:clickOutside={() => {
               console.log("here");
               return setModalOpen(false);
             }}
+            {...props}
           />
         </div>
       </Show>
