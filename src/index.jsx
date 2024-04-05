@@ -1,7 +1,6 @@
 /* @refresh reload */
 import { For, render } from "solid-js/web";
 import { Route, Router } from "@solidjs/router";
-// import { defineConfig } from "@solidjs/start/config";
 import pages from "./pages";
 import App from "./App";
 
@@ -12,14 +11,6 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
     "Root element not found. Did you forget to add it to your index.html? Or maybe the id attribute got misspelled?"
   );
 }
-
-// export default defineConfig({
-//   server: {
-//     prerender: {
-//       crawlLinks: true,
-//     },
-//   },
-// });
 
 render(
   () => (
