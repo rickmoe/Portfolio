@@ -11,6 +11,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  cursor: pointer;
 }
 
 .course-dropdown .arrow {
@@ -46,6 +48,7 @@
 .course-dropdown li {
   padding: 0.25rem 0.75rem;
   border-radius: 0.75rem;
+  cursor: pointer;
 }
 .course-dropdown li:nth-child(2n + 1) {
   background-color: rgba(0, 0, 0, 0.25);

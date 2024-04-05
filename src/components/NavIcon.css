@@ -30,7 +30,7 @@ nav .open .line2 {
 
 @media screen and (prefers-reduced-motion: no-preference) {
   nav .line {
-    transition: stroke-dasharray 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.05s,
-      stroke-dashoffset 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.05s;
+    transition: stroke-dasharray 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.05s,
+      stroke-dashoffset 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.05s;
   }
 }
