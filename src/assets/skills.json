@@ -9,14 +9,14 @@
   },
   {
     "label": "Web Development Tools",
-    "list": ["React.js", "Solid.js", "Node.js", "Express", "Flask"]
+    "list": ["React", "Solid", "Node.js", "Express", "Flask"]
   },
   {
     "label": "Databases",
-    "list": ["MySQL", "MongoDB", "Firebase"]
+    "list": ["MySQL", "MongoDB", "Firebase", "PostgreSQL"]
   },
   {
     "label": "Other Tools",
-    "list": ["Git", "Make", "Linux", "Docker", "Microsoft Office"]
+    "list": ["Git", "Linux", "Docker", "Microsoft Office"]
   }
 ]

@@ -5,7 +5,7 @@
     "tools": [
       "TypeScript",
       "Python",
-      "React.js",
+      "React",
       "Node.js",
       "Flask",
       "MySQL",
@@ -20,7 +20,7 @@
     "description": "A browser-based URL shortener that allows for up to 68.7 billion shortened URLs with only six characters added to each link!",
     "tools": [
       "JavaScript",
-      "React.js",
+      "React",
       "Node.js",
       "Express",
       "MongoDB",
