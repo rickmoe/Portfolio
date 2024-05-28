@@ -1,6 +1,5 @@
 import { useParams } from "@solidjs/router";
 import { For } from "solid-js";
-import ImageWithModal from "../../components/ImageWithModal";
 import filterProjects from "../../hooks/useProjects";
 // import githubIcon from "../../assets/github-icon.webp";
 import linkIcon from "../../assets/link-icon.webp";
@@ -30,10 +29,7 @@ const Projects = () => {
             <For each={projects()}>
               {(project) => (
                 <article class="card">
-                  <ImageWithModal
-                    src={`/${project.name}.webp`}
-                    alt={`${project.name}`}
-                  />
+                  <img src={`/${project.name}.webp`} alt={`${project.name}`} />
                   <section class="card-bottom">
                     <section>
                       <h2>{project.name}</h2>

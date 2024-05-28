@@ -1,11 +1,11 @@
-import "./NavIcon.css";
+import "./MenuIcon.css";
 
-const NavIcon = (props) => {
+const MenuIcon = (props) => {
   return (
     <button
-      classList={{ dropdown: true, open: props.open() }}
+      classList={{ "menu-icon": true, open: props.open() }}
       onClick={props.onClick}
-      aria-label="navigation menu"
+      aria-label="menu icon"
     >
       <svg width="120" height="120" viewBox="0 0 100 100">
         <path
@@ -22,4 +22,4 @@ const NavIcon = (props) => {
   );
 };
 
-export default NavIcon;
+export default MenuIcon;

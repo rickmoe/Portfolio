@@ -15,10 +15,6 @@
   font-size: var(--font-size-name);
 }
 
-.home b {
-  color: var(--color-blue);
-}
-
 .home .heading h2 {
   font-size: var(--font-size-subtitle);
   color: var(--color-contrast-3);

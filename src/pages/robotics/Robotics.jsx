@@ -2,7 +2,7 @@ import robot from "../../assets/robotics-robot.webp";
 import climb from "../../assets/robotics-climb.webp";
 import comp from "../../assets/robotics-comp.webp";
 import "./Robotics.css";
-import ImageWithModal from "../../components/ImageWithModal";
+// import ImageWithModal from "../../components/ImageWithModal";
 
 const Robotics = () => {
   return (
@@ -18,11 +18,11 @@ const Robotics = () => {
         championships, and reached the semifinals of our division in the world
         championships!
       </p>
-      {/* TODO: Add modal for larger image display on click */}
+      {/* TODO: Fix modal for larger image display on click */}
       <section class="img-box">
-        <ImageWithModal src={robot} alt="robot picture" />
-        <ImageWithModal src={climb} alt="robot climbing" />
-        <ImageWithModal src={comp} alt="robotics team at a competition" />
+        <img src={robot} alt="robot picture" />
+        <img src={climb} alt="robot climbing" />
+        <img src={comp} alt="robotics team at a competition" />
       </section>
     </section>
   );
