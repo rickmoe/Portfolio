@@ -1,10 +1,19 @@
 [
   {
     "label": "Programming Languages",
-    "list": ["JavaScript", "TypeScript", "Python", "Java", "C#", "C", "Rust"]
+    "list": [
+      "Python",
+      "Java",
+      "JavaScript",
+      "TypeScript",
+      "C",
+      "C++",
+      "C#",
+      "Rust"
+    ]
   },
   {
-    "label": "Other Technical Languages",
+    "label": "Scripting/Markup Languages",
     "list": ["SQL", "HTML", "CSS"]
   },
   {
@@ -16,7 +25,7 @@
     "list": ["MySQL", "MongoDB", "Firebase", "PostgreSQL"]
   },
   {
-    "label": "Other Tools",
+    "label": "Miscellaneous",
     "list": ["Git", "Linux", "Docker", "Microsoft Office"]
   }
 ]
